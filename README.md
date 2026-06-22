@@ -2,7 +2,7 @@
 
 To ensure that updates don't make me lose my customizations.
 
-#Slicer Start G-Code
+# Slicer Start G-Code
 
 ```
 INIT_MAPPING_VALUE
@@ -14,7 +14,8 @@ LINE_PURGE
 SKEW_PROFILE LOAD=Calilantern
 PROTECT_HOTEND_ON
 ```
-#Slicer End G-Code
+
+# Slicer End G-Code
 
 ```
 PROTECT_HOTEND_OFF
