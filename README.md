@@ -1,7 +1,10 @@
-#Qidi Q2 Custom Configs
+# Qidi Q2 Custom Configs
+
 To ensure that updates don't make me lose my customizations.
 
 #Slicer Start G-Code
+
+```
 INIT_MAPPING_VALUE
 PRINT_START BED=[bed_temperature_initial_layer_single] HOTEND=[nozzle_temperature_initial_layer] CHAMBER=[chamber_temperature] EXTRUDER=[initial_no_support_extruder]
 SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]
@@ -10,8 +13,10 @@ M83
 LINE_PURGE
 SKEW_PROFILE LOAD=Calilantern
 PROTECT_HOTEND_ON
-
+```
 #Slicer End G-Code
+
+```
 PROTECT_HOTEND_OFF
 DISABLE_BOX_HEATER
 M141 S0
@@ -33,4 +38,4 @@ BEEP I=2 DUR=500
 SET_FAN_SPEED FAN=chamber_circulation_fan SPEED=1
 UPDATE_DELAYED_GCODE ID=delayed_fan_off DURATION=300
 M84
-
+```
